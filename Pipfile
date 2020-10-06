@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[requires]
+python_version = "3"
+
+[packages]
+cdktf = "~=0.0.17"
+flake8 = "*"
+black = "*"
+isort = "*"
+
+[scripts]
+lint = "make lint"
+format = "make format"
+diff = "make diff"
+deploy = "make deploy"
+destroy = "make destroy"
+
+[pipenv]
+allow_prereleases = true
+
+[isort]
+skip = "python/**"
+
+[flake8]
+exclude = "python/"
+max-line-length=88
