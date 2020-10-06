@@ -17,3 +17,6 @@ deploy:
 
 destroy:
 	cdktf destroy --auto-approve true
+
+init:
+	cdktf get
